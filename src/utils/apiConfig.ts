@@ -1,11 +1,12 @@
 // API Configuration
 export const API_CONFIG = {
-  baseURL: import.meta.env.VITE_API_BASE_URL || 'https://api.mmowl.top/v1',
-  apiKey: import.meta.env.VITE_API_KEY || '',
+  baseURL: 'https://api.mmowl.top/v1',
+  apiKey: import.meta.env.VITE_API_KEY || 'sk-7L1K38HbTsTUkYexHNwrKUSkuO4GaTHfyVHaz4tF9juJ2awC',
   model: 'gpt-4o-mini',
   maxTokens: 2000,
   temperature: 0.1
 }
+
 
 // Enhanced field mapping for Chinese to English conversion
 export const FIELD_MAPPING = {
