@@ -131,7 +131,7 @@
 
 <script setup lang="ts">
 import { ref } from 'vue'
-import { Camera, UploadFilled, Delete, Search, ArrowLeft } from '@element-plus/icons-vue'
+import { Camera, UploadFilled, Delete, Search } from '@element-plus/icons-vue'
 import type { UploadFile } from 'element-plus'
 import type { NutritionInfo } from '../types'
 import { API_CONFIG, FIELD_MAPPING, DEFAULT_VALUES } from '../utils/apiConfig'
@@ -414,7 +414,7 @@ const mapAndNormalizeData = (parsedData: any): NutritionInfo => {
         const match = trimmedLine.match(/^([^\s\t]+)[\s\t]+(.+)$/)
         if (match) {
           const [, key, value] = match
-          parsedData[key] = value
+          ;(parsedData as any)[key] = value
         }
       }
     }

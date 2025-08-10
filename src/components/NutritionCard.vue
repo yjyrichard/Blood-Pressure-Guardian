@@ -86,7 +86,7 @@
 
 <script setup lang="ts">
 import { computed } from 'vue'
-import { Refresh, Download, ArrowLeft } from '@element-plus/icons-vue'
+import { Refresh, Download } from '@element-plus/icons-vue'
 import { generateNutritionAdvice } from '../utils/nutritionAnalysis'
 import type { NutritionInfo, UserInfo, NutritionAdvice } from '../types'
 
